@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="script" href="script.js" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto"
+      rel="stylesheet"
+    />
+    <title>Bobbie</title>
+  </head>
+
+  <body>
+    <div class="page-container">
+      <div class="img-container">
+        <div class="img-banner"><h2 class="headline">Bobbie</h2></div>
+      </div>
+      <div class="right">
+        <div class="form-headline">
+          <p class="form-caption">
+            This is not a legitimate inscription site, enter at your own risk.
+            Signing up doesn't sign you up for anything. Sign up for Bobbie
+            facts now!
+          </p>
+          <h3 class="title">You Know You Want To</h3>
+          <p class="req">All fields are required</p>
+        </div>
+        <div class="form-background">
+          <form id="form" action="#" novalidate>
+            <div class="form-container">
+              <div class="names">
+                <div class="fname">
+                  <label for="name">First Name</label>
+                  <input
+                    type="text"
+                    class="inp"
+                    id="name"
+                    placeholder="First Name"
+                    pattern="^[a-zA-Z\s]+$"
+                    required
+                  />
+                </div>
+                <div class="country">
+                  <label for="country">Country</label>
+                  <input
+                    type="text"
+                    class="inp"
+                    id="country"
+                    placeholder="Country"
+                    pattern="^[a-zA-Z\s]+$"
+                    required
+                  />
+                </div>
+                <div class="email">
+                  <label for="email">Email</label>
+                  <input
+                    type="email"
+                    class="inp"
+                    id="email"
+                    placeholder="Email"
+                    required
+                  />
+                </div>
+                <div class="zip">
+                  <label for="zip">Zip Code</label>
+                  <input
+                    type="zip"
+                    class="inp"
+                    id="zip"
+                    placeholder="Zip Code"
+                    minlength="5"
+                    maxlength="5"
+                    required
+                  />
+                </div>
+                <div class="pass">
+                  <label for="pwd">Password</label>
+                  <input
+                    type="password"
+                    name="pwd"
+                    id="pwd"
+                    required
+                    pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[^\w\s]).{8,}$"
+                  />
+                  <span class="error"></span>
+                </div>
+                <div class="pass2">
+                  <label class="pwd2" for="pwd2">Confirm Password</label>
+                  <input
+                    type="password"
+                    name="pwd2"
+                    id="pwd2"
+                    required
+                    pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[^\w\s]).{8,}$"
+                  />
+                </div>
+                
+              </div>
+              <div class="pw-constraints">
+                <p class="pw-constraint at-least-8">
+                  Password must be at least 8 characters long
+                </p>
+                <p class="pw-constraint one-uppercase">
+                  Contain at least one uppercase letter
+                </p>
+                <p class="pw-constraint one-lowercase">
+                  At least one lowercase letter
+                </p>
+                <p class="pw-constraint one-number">
+                  At least one number
+                </p>
+                <p class="pw-constraint one-special-char">
+                  And at least one special character
+                </p>
+              </div>
+            </div>
+            <div class="btn-container">
+              <button type="submit" class="submit">Submit</button>
+            </div>
+          </form>
+        </div>
+        <footer class="login">
+          <p class="acct">
+            Already have an account? <a href="#" class="login">Login</a>
+          </p>
+        </footer>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

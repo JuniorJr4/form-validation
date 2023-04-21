@@ -1,0 +1,164 @@
+:root {
+  font-family: "Roboto";
+}
+
+body {
+  font-family: "Roboto";
+  margin: 0;
+  color: #1f2937;
+}
+
+.footer {
+  display: flex;
+  height: 70px;
+  background-color: #1f2937;
+  color: #e5e7eb;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+}
+
+.img-banner {
+  transform: translateY(100px);
+  height: 150px;
+  width: 382px;
+  background-color: black;
+  opacity: 0.35;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.img-container {
+  height: auto;
+  width: 382px;
+  background-image: url("./images/bob-main.JPG");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.headline {
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background-color: transparent;
+}
+
+form {
+  background: transparent;
+}
+
+.page-container {
+  display: flex;
+}
+
+.right {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.name {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 100%;
+}
+
+.page-container {
+  width: auto;
+}
+
+.names {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 15px 0 15px 30px;
+  gap: 40px;
+  font-size: 18px;
+}
+@media (max-width: 600px) {
+  .names {
+    grid-template-columns: repeat(1, 1fr);
+    width: 100%;
+  }
+
+  input {
+    width: 50px;
+  }
+
+  .img-container {
+    display: none;
+  }
+}
+
+.form-background {
+  width: 100%;
+  background-color: #e5e7eb;
+}
+
+.names > div {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+input {
+  width: 200px;
+  padding: 10px;
+  border-radius: 3px;
+  border: 1px solid rgb(128, 114, 114);
+  font-size: 18px;
+}
+
+.submit {
+  width: 150px;
+  align-items: center;
+}
+
+.form-headline {
+  padding: 20px 0 0 30px;
+}
+
+.form-caption {
+  width: 100%;
+}
+
+.login {
+  display: flex;
+  align-items: center;
+  color: black;
+  height: 40px;
+  padding-left: 20px;
+}
+
+.acct {
+  display: flex;
+  align-items: center;
+  padding: 0 20px 0 10px;
+}
+
+.btn-container {
+  padding: 20px 0 15px 30px;
+}
+
+button {
+  border-radius: 5px;
+  background-color: #1f2937;
+  color: white;
+  height: 30px;
+  opacity: 0.3;
+  pointer-events: none;
+}
+
+input:focus {
+  outline: 1px solid #3882f6;
+}
+.pw-constraints p {
+  margin: 0;
+  padding-left: 25px;
+}
+#pwd2, .pwd2 {
+  opacity: 0.3;
+  pointer-events: none;
+}
